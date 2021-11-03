@@ -25,7 +25,7 @@ struct SideLoginView: View {
                         }
                     }
                     .overlay(
-                        Button(action: {}, label: {
+                        Button(action: homeData.loginUser, label: {
                             Image(systemName: "arrowshape.turn.up.right")
                                 .renderingMode(.template)
                                 .resizable()

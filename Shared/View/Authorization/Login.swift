@@ -19,7 +19,7 @@ struct Login: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color("FontColor"))
             Label(
-                title: { TextField("Enter Email", text: $homeData.email)
+                title: { TextField("Enter Email", text: $homeData.userName)
 //      для Мак
                 .textFieldStyle(PlainTextFieldStyle())
                 },

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginButtonModifier: ViewModifier {
+    
     func body(content: Content) -> some View {
         
         return content
@@ -15,8 +16,7 @@ struct LoginButtonModifier: ViewModifier {
             .frame(width: 20, height: 20)
             .foregroundColor(Color("FontColor2"))
             .padding(12)
-            .background(Color("AppleColor")
-            )
-        .clipShape(Circle())
+            .background(Color("AppleColor"))
+            .clipShape(Circle())
     }
 }

@@ -44,7 +44,7 @@ struct Register: View {
                 })
                     
                     Label(
-                        title: { TextField("Enter Email", text: $homeData.email)
+                        title: { TextField("Enter Email", text: $homeData.userName)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                         }, icon: { Image(systemName: "envelope")
@@ -67,7 +67,7 @@ struct Register: View {
                     Divider()
                     
                     Label(
-                        title: { TextField("Re-Enter Password", text: $homeData.reEnter)
+                        title: { TextField("Re-Enter Password", text: $homeData.reEnterPassword)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                         },
