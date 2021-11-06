@@ -10,6 +10,9 @@ import SwiftUI
 struct Register: View {
     @EnvironmentObject var homeData : LoginViewModel
     
+    @State private var showHidePassword = false
+
+    
     var body: some View{
         
         VStack(alignment: .leading, spacing: 18, content: {
@@ -30,13 +33,13 @@ struct Register: View {
                             homeData.gotoRegister.toggle()
                         }
                     }, label: {
-                        Image(systemName: "arrowshape.turn.up.right")
+                        Image(systemName: "chevron.backward.square")
                             .resizable()
                             .renderingMode(.template)
                             .frame(width: 20, height: 20)
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("FontColor"))
-                            .rotationEffect(.init(degrees: 180))
+                            .padding(4)
                     })
 //      для Мак
                     .buttonStyle(PlainButtonStyle())
@@ -46,6 +49,8 @@ struct Register: View {
 // Enter email
                     Label(
                         title: { TextField("Enter Email", text: $homeData.userName)
+//                                .keyboardType(.emailAddress)
+
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                         }, icon: { Image(systemName: "envelope")
@@ -56,29 +61,60 @@ struct Register: View {
                     Divider()
                     
 // Password
-                    Label(
-                        title: { SecureField("Password", text: $homeData.password)
+            Label(
+                title: { if showHidePassword {
+                    TextField("Password", text: $homeData.password)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
-                            
-                        }, icon: { Image(systemName: "lock")
-                                .frame(width: 30)
-                        })
+                } else {
+                    SecureField("Password", text: $homeData.password)
+//      для Мак
+                        .textFieldStyle(PlainTextFieldStyle())
+                }
+// Кнопка показать пароль
+                Button(action: {
+                    self.showHidePassword.toggle()
+                }) {
+                    Image(systemName: self.showHidePassword ? "eye" : "eye.slash")
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 20, height: 15)
+                        .aspectRatio(contentMode: .fit)
                         .foregroundColor(.gray)
+                }
+                }, icon: { Image(systemName: "lock")
+                        .frame(width: 30)
+                })
+                .foregroundColor(.gray)
                     
                     Divider()
-                    
-            
+
 // Re-Enter Password
-                    Label(
-                        title: { SecureField("Re-Enter Password", text: $homeData.reEnterPassword)
+            Label(
+                title: { if showHidePassword {
+                    TextField("Re-enter Password", text: $homeData.password)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
-                        },
-                        icon: { Image(systemName: "lock")
-                                .frame(width: 30)
-                        })
+                } else {
+                    SecureField("Re-enter Password", text: $homeData.password)
+//      для Мак
+                        .textFieldStyle(PlainTextFieldStyle())
+                }
+// Кнопка показать пароль
+                Button(action: {
+                    self.showHidePassword.toggle()
+                }) {
+                    Image(systemName: self.showHidePassword ? "eye" : "eye.slash")
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 20, height: 15)
+                        .aspectRatio(contentMode: .fit)
                         .foregroundColor(.gray)
+                }
+                }, icon: { Image(systemName: "lock")
+                        .frame(width: 30)
+                })
+                .foregroundColor(.gray)
             
                     Divider()
                 })

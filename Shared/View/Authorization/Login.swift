@@ -9,8 +9,12 @@ import SwiftUI
 
 struct Login: View {
     @EnvironmentObject var homeData : LoginViewModel
+    
+    @State private var showHidePassword = false
 
     var body: some View {
+        
+        
 
         VStack(alignment: .leading, spacing: 18, content: {
         
@@ -21,6 +25,8 @@ struct Login: View {
 // Enter Email
             Label(
                 title: { TextField("Enter Email", text: $homeData.userName)
+                    
+//                .keyboardType(.emailAddress)
 //      для Мак
                 .textFieldStyle(PlainTextFieldStyle())
                 },
@@ -30,16 +36,31 @@ struct Login: View {
                         .frame(width: 30)
                 })
                 .foregroundColor(.gray)
+            
             Divider()
             
-// Password
             Label(
-                title: { SecureField("Password", text: $homeData.password)
+                title: { if showHidePassword {
+                    TextField("Password", text: $homeData.password)
 //      для Мак
-                .textFieldStyle(PlainTextFieldStyle())
-                    
-                },
-                icon: { Image(systemName: "lock")
+                        .textFieldStyle(PlainTextFieldStyle())
+                } else {
+                    SecureField("Password", text: $homeData.password)
+//      для Мак
+                        .textFieldStyle(PlainTextFieldStyle())
+                }
+// Кнопка показать пароль
+                Button(action: {
+                    self.showHidePassword.toggle()
+                }) {
+                    Image(systemName: self.showHidePassword ? "eye" : "eye.slash")
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 20, height: 15)
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(.gray)
+                }
+                }, icon: { Image(systemName: "lock")
                         .frame(width: 30)
                 })
                 .foregroundColor(.gray)
