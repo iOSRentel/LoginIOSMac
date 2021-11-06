@@ -15,7 +15,7 @@ struct Register: View {
     
     var body: some View{
         
-        VStack(alignment: .leading, spacing: 18, content: {
+        VStack(alignment: .leading, spacing: 15, content: {
             
             Label(
                 title: {
@@ -116,8 +116,21 @@ struct Register: View {
                 })
                 .foregroundColor(.gray)
             
-                    Divider()
-                })
+            Button(action: homeData.loginUser) {
+                Text("Sign Up")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 45)
+                    .foregroundColor(Color("FontColor"))
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
+            }
+// For MacOS
+            .buttonStyle(PlainButtonStyle())                })
                 .modifier(LoginViewModifier())
         }
     }

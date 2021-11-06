@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "1.png",
+      "filename" : "@burnbgbot (1).png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -45,7 +45,6 @@
       "scale" : "3x"
     },
     {
-      "filename" : "kassa.png",
       "idiom" : "iphone",
       "scale" : "1x"
     },

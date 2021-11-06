@@ -23,7 +23,6 @@
 		665C896D27330BA400E15609 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665C896B27330BA400E15609 /* DashboardView.swift */; };
 		667713E2272AA88D00740BE9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713E1272AA88D00740BE9 /* LoginViewModel.swift */; };
 		667713E4272AA8A700740BE9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713E3272AA8A700740BE9 /* Home.swift */; };
-		667713E7272AAA9200740BE9 /* LoginButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713E6272AAA9200740BE9 /* LoginButtonModifier.swift */; };
 		667713E9272AAAB300740BE9 /* LoginViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713E8272AAAB300740BE9 /* LoginViewModifier.swift */; };
 		667713EB272AAAEA00740BE9 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EA272AAAEA00740BE9 /* Register.swift */; };
 		667713ED272AAB2E00740BE9 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EC272AAB2E00740BE9 /* Login.swift */; };
@@ -32,7 +31,6 @@
 		66BF4209272C3501000F63F5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EC272AAB2E00740BE9 /* Login.swift */; };
 		66BF420A272C3503000F63F5 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EA272AAAEA00740BE9 /* Register.swift */; };
 		66BF420B272C3505000F63F5 /* LoginViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713E8272AAAB300740BE9 /* LoginViewModifier.swift */; };
-		66BF420C272C3507000F63F5 /* LoginButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713E6272AAA9200740BE9 /* LoginButtonModifier.swift */; };
 		66BF4211272C524D000F63F5 /* SideLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF4210272C524D000F63F5 /* SideLoginView.swift */; };
 		66BF4212272C524D000F63F5 /* SideLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BF4210272C524D000F63F5 /* SideLoginView.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +47,6 @@
 		665C896B27330BA400E15609 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		667713E1272AA88D00740BE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		667713E3272AA8A700740BE9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		667713E6272AAA9200740BE9 /* LoginButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonModifier.swift; sourceTree = "<group>"; };
 		667713E8272AAAB300740BE9 /* LoginViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModifier.swift; sourceTree = "<group>"; };
 		667713EA272AAAEA00740BE9 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		667713EC272AAB2E00740BE9 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -181,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				667713E8272AAAB300740BE9 /* LoginViewModifier.swift */,
-				667713E6272AAA9200740BE9 /* LoginButtonModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -302,7 +298,6 @@
 				667713E4272AA8A700740BE9 /* Home.swift in Sources */,
 				667713EB272AAAEA00740BE9 /* Register.swift in Sources */,
 				665C896C27330BA400E15609 /* DashboardView.swift in Sources */,
-				667713E7272AAA9200740BE9 /* LoginButtonModifier.swift in Sources */,
 				665C8965273308B500E15609 /* LoadingView.swift in Sources */,
 				667713E2272AA88D00740BE9 /* LoginViewModel.swift in Sources */,
 				667713ED272AAB2E00740BE9 /* Login.swift in Sources */,
@@ -313,7 +308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66BF420C272C3507000F63F5 /* LoginButtonModifier.swift in Sources */,
 				66BF420B272C3505000F63F5 /* LoginViewModifier.swift in Sources */,
 				66BF420A272C3503000F63F5 /* Register.swift in Sources */,
 				66BF4212272C524D000F63F5 /* SideLoginView.swift in Sources */,

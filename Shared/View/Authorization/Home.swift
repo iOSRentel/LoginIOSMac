@@ -25,7 +25,7 @@ struct Home: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color("FontColor"))
-                        .padding(.leading, 25)
+                        .padding(.leading, 15)
                     
                     Spacer()
                 }
@@ -35,8 +35,10 @@ struct Home: View {
                 Image("kassa")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .padding()
-                    .padding(.horizontal)
+//                    .padding()
+//                    .padding(.horizontal)
+                
+                
 
 //      Login Register
                 if !homeData.ismacOS{
