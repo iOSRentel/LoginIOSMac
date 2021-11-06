@@ -31,10 +31,8 @@ class LoginViewModel: ObservableObject {
     @Published var error = false
     
     //  Detectiong MacOS
-        @Published var ismacOS = false
+    @Published var ismacOS = false
 
-
-    
 // Log status
     @AppStorage("log_Status") var status = false
     
@@ -142,5 +140,5 @@ class LoginViewModel: ObservableObject {
 //        return NSScreen.main!.visibleFrame
 //        #endif
 //    }
-//
+
 

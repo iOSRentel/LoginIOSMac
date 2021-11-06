@@ -23,7 +23,7 @@ struct Register: View {
                 
                 
                 icon: {
-                    // Back button
+// Back button
                     Button(action: {
                         //крутилка
                         withAnimation{
@@ -43,6 +43,7 @@ struct Register: View {
                     
                 })
                     
+// Enter email
                     Label(
                         title: { TextField("Enter Email", text: $homeData.userName)
 //      для Мак
@@ -54,8 +55,9 @@ struct Register: View {
                     
                     Divider()
                     
+// Password
                     Label(
-                        title: { TextField("Password", text: $homeData.password)
+                        title: { SecureField("Password", text: $homeData.password)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                             
@@ -66,8 +68,10 @@ struct Register: View {
                     
                     Divider()
                     
+            
+// Re-Enter Password
                     Label(
-                        title: { TextField("Re-Enter Password", text: $homeData.reEnterPassword)
+                        title: { SecureField("Re-Enter Password", text: $homeData.reEnterPassword)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                         },
@@ -75,6 +79,7 @@ struct Register: View {
                                 .frame(width: 30)
                         })
                         .foregroundColor(.gray)
+            
                     Divider()
                 })
                 .modifier(LoginViewModifier())

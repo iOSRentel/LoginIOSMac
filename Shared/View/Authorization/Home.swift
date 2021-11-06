@@ -37,6 +37,7 @@ struct Home: View {
                     .aspectRatio(contentMode: .fit)
                     .padding()
                     .padding(.horizontal)
+
 //      Login Register
                 if !homeData.ismacOS{
                     SideLoginView()
@@ -46,10 +47,18 @@ struct Home: View {
                 SideLoginView()
             }
         }
+        .overlay(ZStack{if homeData.isLoading{ProgressView()}})
         .frame(maxHeight: .infinity)
         .background(Color("BGColor"))
-        .ignoresSafeArea()
-        
+        //     Error
+        .alert(isPresented: $homeData.error, content: {
+            Alert(title: Text("Message"), message: Text(homeData.errorMsg), dismissButton: .destructive(Text("Ok"),
+            action: {
+                withAnimation{homeData.isLoading = false}
+                
+            }))
+        })
+
 //     and eliminated redeclaration
         .environmentObject(homeData)
     }

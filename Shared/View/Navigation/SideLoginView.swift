@@ -36,7 +36,7 @@ struct SideLoginView: View {
                         
                         .offset(x: -65)
                         ,alignment: .bottomTrailing
-            )
+        )
     }
 }
 

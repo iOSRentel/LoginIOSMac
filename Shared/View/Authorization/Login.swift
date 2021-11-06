@@ -18,6 +18,7 @@ struct Login: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(Color("FontColor"))
+// Enter Email
             Label(
                 title: { TextField("Enter Email", text: $homeData.userName)
 //      для Мак
@@ -30,8 +31,10 @@ struct Login: View {
                 })
                 .foregroundColor(.gray)
             Divider()
+            
+// Password
             Label(
-                title: { TextField("Password", text: $homeData.password)
+                title: { SecureField("Password", text: $homeData.password)
 //      для Мак
                 .textFieldStyle(PlainTextFieldStyle())
                     
@@ -43,8 +46,9 @@ struct Login: View {
             
             Divider()
             
+// Забыл пароль
             HStack{
-                Button(action: {}, label: {
+                Button(action: homeData.resetPassword, label: {
                     Text("Forgot details?")
                         .font(.caption)
                         .fontWeight(.bold)
@@ -54,8 +58,8 @@ struct Login: View {
                 
                 Spacer()
                 
+//    Going to register page
                 Button(action: {
-//         Going to register page
                     withAnimation{
                         homeData.gotoRegister.toggle()
                     }
