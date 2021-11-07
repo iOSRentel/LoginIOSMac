@@ -48,7 +48,7 @@ struct Register: View {
                     
 // Enter email
                     Label(
-                        title: { TextField("Enter Email", text: $homeData.userName)
+                        title: { TextField("Enter Email", text: $homeData.registerUserName)
 //                                .keyboardType(.emailAddress)
 
 //      для Мак
@@ -63,25 +63,15 @@ struct Register: View {
 // Password
             Label(
                 title: { if showHidePassword {
-                    TextField("Password", text: $homeData.password)
+                    TextField("Password", text: $homeData.registerPassword)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                 } else {
-                    SecureField("Password", text: $homeData.password)
+                    SecureField("Password", text: $homeData.registerPassword)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                 }
-// Кнопка показать пароль
-                Button(action: {
-                    self.showHidePassword.toggle()
-                }) {
-                    Image(systemName: self.showHidePassword ? "eye" : "eye.slash")
-                        .resizable()
-                        .renderingMode(.template)
-                        .frame(width: 20, height: 15)
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(.gray)
-                }
+
                 }, icon: { Image(systemName: "lock")
                         .frame(width: 30)
                 })
@@ -92,11 +82,11 @@ struct Register: View {
 // Re-Enter Password
             Label(
                 title: { if showHidePassword {
-                    TextField("Re-enter Password", text: $homeData.password)
+                    TextField("Re-enter Password", text: $homeData.reEnterPassword)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                 } else {
-                    SecureField("Re-enter Password", text: $homeData.password)
+                    SecureField("Re-enter Password", text: $homeData.reEnterPassword)
 //      для Мак
                         .textFieldStyle(PlainTextFieldStyle())
                 }
@@ -111,13 +101,13 @@ struct Register: View {
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(.gray)
                 }
-                }, icon: { Image(systemName: "lock")
+                }, icon: { Image(systemName: "lock.rotation")
                         .frame(width: 30)
                 })
                 .foregroundColor(.gray)
             
-            Button(action: homeData.loginUser) {
-                Text("Sign Up")
+            Button(action: homeData.registerUser) {
+                Text("Register")
                     .font(.title3)
                     .fontWeight(.semibold)
                     .frame(maxWidth: .infinity)
@@ -134,3 +124,4 @@ struct Register: View {
                 .modifier(LoginViewModifier())
         }
     }
+
