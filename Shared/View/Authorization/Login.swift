@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AuthenticationServices
+
 
 struct Login: View {
     @EnvironmentObject var homeData : LoginViewModel
-    
+        
     @State private var showHidePassword = false
     
     var body: some View {
@@ -101,7 +103,7 @@ struct Login: View {
                         .font(.title3)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
-                        .frame(height: 45)
+                        .frame(height: 35)
                         .foregroundColor(Color("FontColor"))
                         .cornerRadius(8)
                         .overlay(
@@ -117,6 +119,38 @@ struct Login: View {
                     .font(.caption)
                     .foregroundColor(Color.gray)
                     .frame(maxWidth: .infinity, alignment: .center)
+                
+                
+//MARK: Sign with Apple
+                SignInWithAppleButton { (request) in
+                    
+                    //requesting parametres from Apple login
+                    homeData.nonce = randomNonceString()
+                    request.requestedScopes = [.email,.fullName]
+                    request.nonce = sha256(homeData.nonce)
+                    
+                }onCompletion: { (result) in
+                // getting error of success
+
+                        switch result {
+                                    case .success(let user):
+                                        print("success")
+
+                // do login with Firebase
+                                    guard let credential = user.credential as? ASAuthorizationAppleIDCredential else{
+                                    print("error with Firebase")
+                                        return
+                                    }
+                            homeData.authenticate(credential: credential)
+                                    case.failure(let error):
+                                        print(error.localizedDescription)
+                                        
+                                        }
+                                    }
+                .signInWithAppleButtonStyle(.black)
+
+                                    .frame(maxWidth: .infinity)
+                                    .cornerRadius(8)
                 }
             }
         )

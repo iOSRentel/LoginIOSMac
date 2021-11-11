@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SideLoginView: View {
     @EnvironmentObject var homeData: LoginViewModel

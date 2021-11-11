@@ -9,6 +9,7 @@
 // 14:16 !!!!!
 
 import SwiftUI
+import Firebase
 
 struct Home: View {
     @StateObject var homeData = LoginViewModel()
@@ -35,11 +36,7 @@ struct Home: View {
                 Image("kassa")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-//                    .padding()
-//                    .padding(.horizontal)
                 
-                
-
 //      Login Register
                 if !homeData.ismacOS{
                     SideLoginView()
