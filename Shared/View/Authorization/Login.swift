@@ -16,8 +16,6 @@ struct Login: View {
     
     var body: some View {
         
-        
-        
         VStack(alignment: .leading, spacing: 15, content: {
             
             Text("Please Login")
@@ -95,13 +93,13 @@ struct Login: View {
                     .buttonStyle(PlainButtonStyle())
                 
             }
-            .padding(5)
+            .padding()
             .foregroundColor(Color("FontColor"))
             
             VStack(spacing: 10){
                 Button(action: homeData.loginUser) {
                     Text("Login")
-                        .font(.title3)
+//                        .font(.title3)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
                         .frame(height: 30)
