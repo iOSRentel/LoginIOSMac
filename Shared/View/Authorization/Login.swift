@@ -95,15 +95,16 @@ struct Login: View {
                     .buttonStyle(PlainButtonStyle())
                 
             }
+            .padding(5)
             .foregroundColor(Color("FontColor"))
             
             VStack(spacing: 10){
                 Button(action: homeData.loginUser) {
-                    Text("Sign In")
+                    Text("Login")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
-                        .frame(height: 35)
+                        .frame(height: 30)
                         .foregroundColor(Color("FontColor"))
                         .cornerRadius(8)
                         .overlay(
@@ -151,9 +152,15 @@ struct Login: View {
 
                                     .frame(maxWidth: .infinity)
                                     .cornerRadius(8)
+                Spacer()
+//MARK: - Footer
+                    .modifier(CopyrightModifier())
                 }
+            
             }
         )
         .modifier(LoginViewModifier())
+        
     }
+    
 }
