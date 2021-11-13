@@ -148,8 +148,10 @@ class LoginViewModel: ObservableObject {
       }
 // User Successfully Logged into Firebase
         print("Logged In Seccess")
+        withAnimation(.easeInOut){
         self.status = true
-    }
+            }
+        }
     }
 }
 
@@ -197,6 +199,6 @@ func randomNonceString(length: Int = 32) -> String {
   }
 
   return result
-}
     
+}
 

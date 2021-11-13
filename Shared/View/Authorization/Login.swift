@@ -150,15 +150,11 @@ struct Login: View {
 
                                     .frame(maxWidth: .infinity)
                                     .cornerRadius(8)
-                Spacer()
 //MARK: - Footer
-                    .modifier(CopyrightModifier())
                 }
-            
             }
         )
         .modifier(LoginViewModifier())
-        
     }
     
 }

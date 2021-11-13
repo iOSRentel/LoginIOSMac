@@ -11,11 +11,11 @@ struct ContentView: View {
     @AppStorage("log_Status") var status = false
     
     var body: some View {
-        
+    
         if status{
-            DashboardView()
+            PhoneView()
         }else{
-            Home()
+            Welcome()
         }
     }
 }
