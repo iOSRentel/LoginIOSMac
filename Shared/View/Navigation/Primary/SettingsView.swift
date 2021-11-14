@@ -18,7 +18,7 @@ struct SettingsView: View {
     // MARK: - FORM
         Form {
             
-            Section(header: Text("Profile")) {
+            Section() {
                     HStack {
                         Image("Samanba")
                             .resizable()
@@ -35,13 +35,13 @@ struct SettingsView: View {
                     }
                 }
             }
-            Section(header: Text("Follow us on social media")) {
+            Section() {
                 FormRowLinkView(icon: "globe", color: Color.pink, text: "Website", link: "https://rentel.me/")
                 FormRowLinkView(icon: "textformat.abc.dottedunderline", color: Color.blue, text: "Twitter", link: "https://twitter.com/RentelMe/")
                 FormRowLinkView(icon: "link", color: Color.purple, text: "Instagram", link: "https://www.instagram.com/rentel.me/")
             }
             
-            Section(header: Text("About the application")) {
+            Section() {
                 FormRowStaticView(icon: "gear", firstText: "Application", secondText: "Rentel POS")
                 FormRowStaticView(icon: "checkmark.seal", firstText: "Compatibility", secondText: "iOS, iPadOS")
                 FormRowStaticView(icon: "dot.radiowaves.right", firstText: "Connectivity", secondText: "NFC Reader")
@@ -64,8 +64,9 @@ struct SettingsView: View {
             .modifier(CopyrightModifier())
             .padding()
         }
-    .background(Color("ColorBackground"))
-//    .edgesIgnoringSafeArea(.all))
+    .navigationBarTitle("Settings", displayMode: .automatic)
+    .background(Color("ColorBackground")
+    .edgesIgnoringSafeArea(.all))
         
     }
 }

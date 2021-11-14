@@ -9,7 +9,9 @@ import SwiftUI
 
 struct PhoneView: View {
     var body: some View {
-        SettingsView()
+        NavigationView{
+            SettingsView()
+        }
     }
 }
 
