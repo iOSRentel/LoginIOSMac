@@ -22,6 +22,14 @@
 		667713E9272AAAB300740BE9 /* LoginViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713E8272AAAB300740BE9 /* LoginViewModifier.swift */; };
 		667713EB272AAAEA00740BE9 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EA272AAAEA00740BE9 /* Register.swift */; };
 		667713ED272AAB2E00740BE9 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EC272AAB2E00740BE9 /* Login.swift */; };
+		6682852827415F5A0097D634 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852727415F5A0097D634 /* DashboardView.swift */; };
+		6682852927415F5A0097D634 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852727415F5A0097D634 /* DashboardView.swift */; };
+		6682852B27415FBE0097D634 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852A27415FBE0097D634 /* OrdersView.swift */; };
+		6682852C27415FBE0097D634 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852A27415FBE0097D634 /* OrdersView.swift */; };
+		6682852E27415FCF0097D634 /* POSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852D27415FCF0097D634 /* POSView.swift */; };
+		6682852F27415FCF0097D634 /* POSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852D27415FCF0097D634 /* POSView.swift */; };
+		66828531274160040097D634 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66828530274160040097D634 /* MenuView.swift */; };
+		66828532274160040097D634 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66828530274160040097D634 /* MenuView.swift */; };
 		6686814B273FE27700EF572C /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686814A273FE27700EF572C /* PhoneView.swift */; };
 		6686814D273FE28C00EF572C /* PadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686814C273FE28C00EF572C /* PadView.swift */; };
 		6686814E273FE28C00EF572C /* PadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686814C273FE28C00EF572C /* PadView.swift */; };
@@ -58,6 +66,10 @@
 		667713E8272AAAB300740BE9 /* LoginViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModifier.swift; sourceTree = "<group>"; };
 		667713EA272AAAEA00740BE9 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		667713EC272AAB2E00740BE9 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6682852727415F5A0097D634 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		6682852A27415FBE0097D634 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		6682852D27415FCF0097D634 /* POSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSView.swift; sourceTree = "<group>"; };
+		66828530274160040097D634 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		6686814A273FE27700EF572C /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 		6686814C273FE28C00EF572C /* PadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadView.swift; sourceTree = "<group>"; };
 		66868154273FF94400EF572C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -143,6 +155,7 @@
 				667713E3272AA8A700740BE9 /* Welcome.swift */,
 				667713EC272AAB2E00740BE9 /* Login.swift */,
 				667713EA272AAAEA00740BE9 /* Register.swift */,
+				66BF4210272C524D000F63F5 /* SideLoginView.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -176,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				662D362A272AA3C6000C6E9F /* ContentView.swift */,
-				66BF4210272C524D000F63F5 /* SideLoginView.swift */,
+				6682852727415F5A0097D634 /* DashboardView.swift */,
 				66868149273FE22D00EF572C /* Devices */,
 				665C896A27330B7300E15609 /* Navigation */,
 				6649F08D273034DB0012808A /* Authorization */,
@@ -208,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				66868154273FF94400EF572C /* SettingsView.swift */,
+				66828530274160040097D634 /* MenuView.swift */,
 			);
 			path = Primary;
 			sourceTree = "<group>";
@@ -215,6 +229,7 @@
 		66868152273FEC1200EF572C /* Supplementary */ = {
 			isa = PBXGroup;
 			children = (
+				6682852A27415FBE0097D634 /* OrdersView.swift */,
 			);
 			path = Supplementary;
 			sourceTree = "<group>";
@@ -222,6 +237,7 @@
 		66868153273FEC3F00EF572C /* Secondary */ = {
 			isa = PBXGroup;
 			children = (
+				6682852D27415FCF0097D634 /* POSView.swift */,
 			);
 			path = Secondary;
 			sourceTree = "<group>";
@@ -345,6 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				662D363B272AA3F9000C6E9F /* ContentView.swift in Sources */,
+				6682852827415F5A0097D634 /* DashboardView.swift in Sources */,
+				6682852B27415FBE0097D634 /* OrdersView.swift in Sources */,
+				66828531274160040097D634 /* MenuView.swift in Sources */,
 				6686815B274003A200EF572C /* FormRowStaticView.swift in Sources */,
 				667713E9272AAAB300740BE9 /* LoginViewModifier.swift in Sources */,
 				6686814D273FE28C00EF572C /* PadView.swift in Sources */,
@@ -359,6 +378,7 @@
 				667713E2272AA88D00740BE9 /* LoginViewModel.swift in Sources */,
 				667713ED272AAB2E00740BE9 /* Login.swift in Sources */,
 				66442558273E5E1F009202D3 /* CopyrightModifier.swift in Sources */,
+				6682852E27415FCF0097D634 /* POSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,12 +391,16 @@
 				66BF420A272C3503000F63F5 /* Register.swift in Sources */,
 				66BF4212272C524D000F63F5 /* SideLoginView.swift in Sources */,
 				662D363C272AA3F9000C6E9F /* ContentView.swift in Sources */,
+				6682852C27415FBE0097D634 /* OrdersView.swift in Sources */,
 				66BF4209272C3501000F63F5 /* Login.swift in Sources */,
 				662D363A272AA3F9000C6E9F /* LoginIOSMacApp.swift in Sources */,
+				6682852927415F5A0097D634 /* DashboardView.swift in Sources */,
 				665C8966273308B500E15609 /* LoadingView.swift in Sources */,
 				6686814E273FE28C00EF572C /* PadView.swift in Sources */,
 				66BF4208272C34FE000F63F5 /* Welcome.swift in Sources */,
 				66BF4207272C34F0000F63F5 /* LoginViewModel.swift in Sources */,
+				66828532274160040097D634 /* MenuView.swift in Sources */,
+				6682852F27415FCF0097D634 /* POSView.swift in Sources */,
 				66442559273E5E1F009202D3 /* CopyrightModifier.swift in Sources */,
 				66868156273FF94400EF572C /* SettingsView.swift in Sources */,
 				668681592740035800EF572C /* FormRowLinkView.swift in Sources */,

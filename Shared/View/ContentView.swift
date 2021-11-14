@@ -8,12 +8,14 @@ import SwiftUI
 import Firebase
 
 struct ContentView: View {
+    @State private var currentList = 0
+
     @AppStorage("log_Status") var status = false
     
     var body: some View {
     
         if status{
-            PhoneView()
+            DashboardView()
         }else{
             Welcome()
         }

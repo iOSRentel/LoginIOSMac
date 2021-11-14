@@ -67,6 +67,5 @@ struct SettingsView: View {
     .navigationBarTitle("Settings", displayMode: .automatic)
     .background(Color("ColorBackground")
     .edgesIgnoringSafeArea(.all))
-        
     }
 }

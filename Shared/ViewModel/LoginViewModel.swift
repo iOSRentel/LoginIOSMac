@@ -38,7 +38,6 @@ class LoginViewModel: ObservableObject {
 // Log status
     @AppStorage("log_Status") var status = false
     
-    
 //MARK: - Auth
     func loginUser(){
 //   Loading Screen
@@ -199,6 +198,7 @@ func randomNonceString(length: Int = 32) -> String {
   }
 
   return result
-    
 }
+
+   
 
