@@ -13,6 +13,8 @@
 		662D363C272AA3F9000C6E9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662D362A272AA3C6000C6E9F /* ContentView.swift */; };
 		662D363D272AA3F9000C6E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662D362B272AA3F9000C6E9F /* Assets.xcassets */; };
 		662D363E272AA3F9000C6E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662D362B272AA3F9000C6E9F /* Assets.xcassets */; };
+		6637A8D027427D3400447D94 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637A8CF27427D3400447D94 /* ProfileInfo.swift */; };
+		6637A8D127427D3400447D94 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637A8CF27427D3400447D94 /* ProfileInfo.swift */; };
 		66442558273E5E1F009202D3 /* CopyrightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66442557273E5E1F009202D3 /* CopyrightModifier.swift */; };
 		66442559273E5E1F009202D3 /* CopyrightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66442557273E5E1F009202D3 /* CopyrightModifier.swift */; };
 		665C8965273308B500E15609 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665C8964273308B500E15609 /* LoadingView.swift */; };
@@ -59,6 +61,7 @@
 		662D3630272AA3F9000C6E9F /* LoginIOSMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginIOSMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662D3636272AA3F9000C6E9F /* LoginIOSMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginIOSMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662D3638272AA3F9000C6E9F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		6637A8CF27427D3400447D94 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
 		66442557273E5E1F009202D3 /* CopyrightModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightModifier.swift; sourceTree = "<group>"; };
 		665C8964273308B500E15609 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		667713E1272AA88D00740BE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				667713E1272AA88D00740BE9 /* LoginViewModel.swift */,
+				668681572740035800EF572C /* FormRowLinkView.swift */,
+				6686815A274003A200EF572C /* FormRowStaticView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				66868154273FF94400EF572C /* SettingsView.swift */,
+				6637A8CF27427D3400447D94 /* ProfileInfo.swift */,
 				66828530274160040097D634 /* MenuView.swift */,
 			);
 			path = Primary;
@@ -245,8 +251,6 @@
 		6686815D274003B300EF572C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				668681572740035800EF572C /* FormRowLinkView.swift */,
-				6686815A274003A200EF572C /* FormRowStaticView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -365,6 +369,7 @@
 				6682852B27415FBE0097D634 /* OrdersView.swift in Sources */,
 				66828531274160040097D634 /* MenuView.swift in Sources */,
 				6686815B274003A200EF572C /* FormRowStaticView.swift in Sources */,
+				6637A8D027427D3400447D94 /* ProfileInfo.swift in Sources */,
 				667713E9272AAAB300740BE9 /* LoginViewModifier.swift in Sources */,
 				6686814D273FE28C00EF572C /* PadView.swift in Sources */,
 				662D3639272AA3F9000C6E9F /* LoginIOSMacApp.swift in Sources */,
@@ -392,6 +397,7 @@
 				66BF4212272C524D000F63F5 /* SideLoginView.swift in Sources */,
 				662D363C272AA3F9000C6E9F /* ContentView.swift in Sources */,
 				6682852C27415FBE0097D634 /* OrdersView.swift in Sources */,
+				6637A8D127427D3400447D94 /* ProfileInfo.swift in Sources */,
 				66BF4209272C3501000F63F5 /* Login.swift in Sources */,
 				662D363A272AA3F9000C6E9F /* LoginIOSMacApp.swift in Sources */,
 				6682852927415F5A0097D634 /* DashboardView.swift in Sources */,
@@ -539,7 +545,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,7 +577,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
