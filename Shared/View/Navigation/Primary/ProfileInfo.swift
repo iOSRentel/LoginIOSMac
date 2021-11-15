@@ -9,14 +9,38 @@ import SwiftUI
 
 struct ProfileInfo: View {
     
+    @State private var profileImage: Image?
+    @State private var pickedImage: Image?
+    @State private var showingActionSheet = false
+    @State private var showingImagePicker = false
+    @State private var imageData: Data = Data()
+    @State private var soueceType: UIImagePickerController.SourceType = .photoLibrary
+    
+    func loadImage() {
+        guard let inputImage = pickedImage else {return}
+            profileImage = inputImage
+    }
+    
     var body: some View {
         
         HStack {
-            Image("Samanba")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 60, height: 60)
-                .clipShape(Circle())
+            if profileImage != nil {
+                profileImage!.resizable()
+                    .clipShape(Circle())
+                    .frame(width: 60, height: 60)
+                    .onTapGesture {
+                        self.showingActionSheet = true
+                    }
+            } else {
+                Image(systemName: "person.circle.fill")
+                    .resizable()
+                    .clipShape(Circle())
+                    .frame(width: 60, height: 60)
+                    .onTapGesture {
+                        self.showingActionSheet = true
+                    }
+            }
+            
 
             VStack(alignment: .leading) {
                 Text("Business name")
@@ -26,7 +50,22 @@ struct ProfileInfo: View {
                     .foregroundColor(.gray)
             }
         }
-        
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+            ImagePicker(pickedImage: self.$pickedImage, showImagePicker: self.$showingImagePicker, imageData: self.$imageData)
+        }
+        .actionSheet(isPresented: $showingActionSheet) {
+            ActionSheet(title: Text(""), buttons: [
+                .default(Text("Choose your account Logo")) {
+                    self.soueceType = .photoLibrary
+                    self.showingImagePicker = true
+//                },
+//                .default(Text("Take a Photo")) {
+//                    self.soueceType = .camera
+//                    self.showingImagePicker = true
+                },
+                .cancel()
+            ])
+        }
     }
 }
 

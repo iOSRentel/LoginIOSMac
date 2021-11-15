@@ -15,6 +15,8 @@
 		662D363E272AA3F9000C6E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662D362B272AA3F9000C6E9F /* Assets.xcassets */; };
 		6637A8D027427D3400447D94 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637A8CF27427D3400447D94 /* ProfileInfo.swift */; };
 		6637A8D127427D3400447D94 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637A8CF27427D3400447D94 /* ProfileInfo.swift */; };
+		6637A8D72742A61700447D94 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637A8D62742A61700447D94 /* ImagePicker.swift */; };
+		6637A8D82742A61700447D94 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637A8D62742A61700447D94 /* ImagePicker.swift */; };
 		66442558273E5E1F009202D3 /* CopyrightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66442557273E5E1F009202D3 /* CopyrightModifier.swift */; };
 		66442559273E5E1F009202D3 /* CopyrightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66442557273E5E1F009202D3 /* CopyrightModifier.swift */; };
 		665C8965273308B500E15609 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665C8964273308B500E15609 /* LoadingView.swift */; };
@@ -62,6 +64,7 @@
 		662D3636272AA3F9000C6E9F /* LoginIOSMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginIOSMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662D3638272AA3F9000C6E9F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		6637A8CF27427D3400447D94 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
+		6637A8D62742A61700447D94 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		66442557273E5E1F009202D3 /* CopyrightModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightModifier.swift; sourceTree = "<group>"; };
 		665C8964273308B500E15609 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		667713E1272AA88D00740BE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -144,12 +147,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		6649F089273034970012808A /* Custom */ = {
+		6649F089273034970012808A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				665C8964273308B500E15609 /* LoadingView.swift */,
+				6637A8D62742A61700447D94 /* ImagePicker.swift */,
 			);
-			path = Custom;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		6649F08D273034DB0012808A /* Authorization */ = {
@@ -199,7 +203,7 @@
 				665C896A27330B7300E15609 /* Navigation */,
 				6649F08D273034DB0012808A /* Authorization */,
 				667713E5272AAA7300740BE9 /* Modifier */,
-				6649F089273034970012808A /* Custom */,
+				6649F089273034970012808A /* Utilities */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +371,7 @@
 				662D363B272AA3F9000C6E9F /* ContentView.swift in Sources */,
 				6682852827415F5A0097D634 /* DashboardView.swift in Sources */,
 				6682852B27415FBE0097D634 /* OrdersView.swift in Sources */,
+				6637A8D72742A61700447D94 /* ImagePicker.swift in Sources */,
 				66828531274160040097D634 /* MenuView.swift in Sources */,
 				6686815B274003A200EF572C /* FormRowStaticView.swift in Sources */,
 				6637A8D027427D3400447D94 /* ProfileInfo.swift in Sources */,
@@ -408,6 +413,7 @@
 				66828532274160040097D634 /* MenuView.swift in Sources */,
 				6682852F27415FCF0097D634 /* POSView.swift in Sources */,
 				66442559273E5E1F009202D3 /* CopyrightModifier.swift in Sources */,
+				6637A8D82742A61700447D94 /* ImagePicker.swift in Sources */,
 				66868156273FF94400EF572C /* SettingsView.swift in Sources */,
 				668681592740035800EF572C /* FormRowLinkView.swift in Sources */,
 			);
