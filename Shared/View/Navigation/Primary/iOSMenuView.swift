@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct MenuView: View {
+struct iOSMenuView: View {
     var body: some View {
-        Text("Menu")
+        Text("iOSMenu")
     }
 }
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        iOSMenuView()
     }
 }

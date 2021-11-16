@@ -12,10 +12,8 @@ struct PadView: View {
     @Binding var currentList: Int
 
     var body: some View {
-        NavigationView{
             SettingsView()
-            OrdersView()
-            POSView()
-        }
+            CartView()
+            MenuListView(menuListViewModel: MenuListViewModel())
     }
 }

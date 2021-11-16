@@ -25,9 +25,8 @@
 		667713EB272AAAEA00740BE9 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EA272AAAEA00740BE9 /* Register.swift */; };
 		667713ED272AAB2E00740BE9 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667713EC272AAB2E00740BE9 /* Login.swift */; };
 		6682852827415F5A0097D634 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852727415F5A0097D634 /* DashboardView.swift */; };
-		6682852B27415FBE0097D634 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852A27415FBE0097D634 /* OrdersView.swift */; };
-		6682852E27415FCF0097D634 /* POSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852D27415FCF0097D634 /* POSView.swift */; };
-		66828531274160040097D634 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66828530274160040097D634 /* MenuView.swift */; };
+		6682852B27415FBE0097D634 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852A27415FBE0097D634 /* CartView.swift */; };
+		66828531274160040097D634 /* iOSMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66828530274160040097D634 /* iOSMenuView.swift */; };
 		6686814B273FE27700EF572C /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686814A273FE27700EF572C /* PhoneView.swift */; };
 		6686814D273FE28C00EF572C /* PadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686814C273FE28C00EF572C /* PadView.swift */; };
 		66868155273FF94400EF572C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66868154273FF94400EF572C /* SettingsView.swift */; };
@@ -47,6 +46,19 @@
 		66FBF17D2743A47D00B4D23B /* MacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF17C2743A47D00B4D23B /* MacView.swift */; };
 		66FBF17E2743A72200B4D23B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662D362A272AA3C6000C6E9F /* ContentView.swift */; };
 		66FBF17F2743AFE400B4D23B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682852727415F5A0097D634 /* DashboardView.swift */; };
+		66FBF1832743BA3600B4D23B /* OrdersCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1822743BA3600B4D23B /* OrdersCartViewModel.swift */; };
+		66FBF1842743BA3B00B4D23B /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1802743BA1500B4D23B /* ItemsView.swift */; };
+		66FBF1862743BA8500B4D23B /* OrdersItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1852743BA8500B4D23B /* OrdersItem.swift */; };
+		66FBF1882743C10000B4D23B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 66FBF1872743C10000B4D23B /* FirebaseFirestore */; };
+		66FBF18A2743C10F00B4D23B /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 66FBF1892743C10F00B4D23B /* FirebaseFirestoreSwift-Beta */; };
+		66FBF18D2743C1BE00B4D23B /* MenuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF18C2743C1BE00B4D23B /* MenuRepository.swift */; };
+		66FBF18F2743C28600B4D23B /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF18E2743C28600B4D23B /* MenuListViewModel.swift */; };
+		66FBF1912743C2AD00B4D23B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1902743C2AD00B4D23B /* Menu.swift */; };
+		66FBF1932743C2CC00B4D23B /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1922743C2CC00B4D23B /* MenuViewModel.swift */; };
+		66FBF1952743C2F100B4D23B /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1942743C2F100B4D23B /* MenuListView.swift */; };
+		66FBF1972743C37500B4D23B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1962743C37500B4D23B /* MenuView.swift */; };
+		66FBF1992743C38600B4D23B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF1982743C38600B4D23B /* FormView.swift */; };
+		66FBF19B2743D7BB00B4D23B /* NFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF19A2743D7BB00B4D23B /* NFC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,9 +78,8 @@
 		667713EA272AAAEA00740BE9 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		667713EC272AAB2E00740BE9 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6682852727415F5A0097D634 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		6682852A27415FBE0097D634 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
-		6682852D27415FCF0097D634 /* POSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSView.swift; sourceTree = "<group>"; };
-		66828530274160040097D634 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		6682852A27415FBE0097D634 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		66828530274160040097D634 /* iOSMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMenuView.swift; sourceTree = "<group>"; };
 		6686814A273FE27700EF572C /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 		6686814C273FE28C00EF572C /* PadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadView.swift; sourceTree = "<group>"; };
 		66868154273FF94400EF572C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -78,6 +89,17 @@
 		66DAA5C62737E9AE006F6728 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		66DAA5CB2737F510006F6728 /* LoginIOSMac (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LoginIOSMac (iOS).entitlements"; sourceTree = "<group>"; };
 		66FBF17C2743A47D00B4D23B /* MacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacView.swift; sourceTree = "<group>"; };
+		66FBF1802743BA1500B4D23B /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		66FBF1822743BA3600B4D23B /* OrdersCartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCartViewModel.swift; sourceTree = "<group>"; };
+		66FBF1852743BA8500B4D23B /* OrdersItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersItem.swift; sourceTree = "<group>"; };
+		66FBF18C2743C1BE00B4D23B /* MenuRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRepository.swift; sourceTree = "<group>"; };
+		66FBF18E2743C28600B4D23B /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
+		66FBF1902743C2AD00B4D23B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		66FBF1922743C2CC00B4D23B /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		66FBF1942743C2F100B4D23B /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
+		66FBF1962743C37500B4D23B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		66FBF1982743C38600B4D23B /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		66FBF19A2743D7BB00B4D23B /* NFC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +108,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DAA5C22737E67B006F6728 /* FirebaseAuth in Frameworks */,
+				66FBF18A2743C10F00B4D23B /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				6637A8DA2742B03500447D94 /* FirebaseStorage in Frameworks */,
+				66FBF1882743C10000B4D23B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +132,7 @@
 				66DAA5CB2737F510006F6728 /* LoginIOSMac (iOS).entitlements */,
 				66DAA5C62737E9AE006F6728 /* GoogleService-Info.plist */,
 				662D3628272AA3C1000C6E9F /* Shared */,
+				66FBF18B2743C1A200B4D23B /* Repository */,
 				662D362B272AA3F9000C6E9F /* Assets.xcassets */,
 				662D3637272AA3F9000C6E9F /* macOS */,
 				662D3631272AA3F9000C6E9F /* Products */,
@@ -148,6 +173,7 @@
 			children = (
 				665C8964273308B500E15609 /* LoadingView.swift */,
 				6637A8D62742A61700447D94 /* ImagePicker.swift */,
+				66FBF19A2743D7BB00B4D23B /* NFC.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -186,6 +212,9 @@
 				667713E1272AA88D00740BE9 /* LoginViewModel.swift */,
 				668681572740035800EF572C /* FormRowLinkView.swift */,
 				6686815A274003A200EF572C /* FormRowStaticView.swift */,
+				66FBF1822743BA3600B4D23B /* OrdersCartViewModel.swift */,
+				66FBF18E2743C28600B4D23B /* MenuListViewModel.swift */,
+				66FBF1922743C2CC00B4D23B /* MenuViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -228,7 +257,7 @@
 			children = (
 				66868154273FF94400EF572C /* SettingsView.swift */,
 				6637A8CF27427D3400447D94 /* ProfileInfo.swift */,
-				66828530274160040097D634 /* MenuView.swift */,
+				66828530274160040097D634 /* iOSMenuView.swift */,
 			);
 			path = Primary;
 			sourceTree = "<group>";
@@ -236,7 +265,8 @@
 		66868152273FEC1200EF572C /* Supplementary */ = {
 			isa = PBXGroup;
 			children = (
-				6682852A27415FBE0097D634 /* OrdersView.swift */,
+				6682852A27415FBE0097D634 /* CartView.swift */,
+				66FBF1802743BA1500B4D23B /* ItemsView.swift */,
 			);
 			path = Supplementary;
 			sourceTree = "<group>";
@@ -244,7 +274,9 @@
 		66868153273FEC3F00EF572C /* Secondary */ = {
 			isa = PBXGroup;
 			children = (
-				6682852D27415FCF0097D634 /* POSView.swift */,
+				66FBF1942743C2F100B4D23B /* MenuListView.swift */,
+				66FBF1962743C37500B4D23B /* MenuView.swift */,
+				66FBF1982743C38600B4D23B /* FormView.swift */,
 			);
 			path = Secondary;
 			sourceTree = "<group>";
@@ -252,8 +284,18 @@
 		6686815D274003B300EF572C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				66FBF1852743BA8500B4D23B /* OrdersItem.swift */,
+				66FBF1902743C2AD00B4D23B /* Menu.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		66FBF18B2743C1A200B4D23B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				66FBF18C2743C1BE00B4D23B /* MenuRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +317,8 @@
 			packageProductDependencies = (
 				66DAA5C12737E67B006F6728 /* FirebaseAuth */,
 				6637A8D92742B03500447D94 /* FirebaseStorage */,
+				66FBF1872743C10000B4D23B /* FirebaseFirestore */,
+				66FBF1892743C10F00B4D23B /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = "LoginIOSMac (iOS)";
 			productReference = 662D3630272AA3F9000C6E9F /* LoginIOSMac.app */;
@@ -367,27 +411,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FBF18F2743C28600B4D23B /* MenuListViewModel.swift in Sources */,
+				66FBF1952743C2F100B4D23B /* MenuListView.swift in Sources */,
 				662D363B272AA3F9000C6E9F /* ContentView.swift in Sources */,
+				66FBF1862743BA8500B4D23B /* OrdersItem.swift in Sources */,
+				66FBF18D2743C1BE00B4D23B /* MenuRepository.swift in Sources */,
+				66FBF1992743C38600B4D23B /* FormView.swift in Sources */,
 				6682852827415F5A0097D634 /* DashboardView.swift in Sources */,
-				6682852B27415FBE0097D634 /* OrdersView.swift in Sources */,
+				6682852B27415FBE0097D634 /* CartView.swift in Sources */,
+				66FBF1912743C2AD00B4D23B /* Menu.swift in Sources */,
 				6637A8D72742A61700447D94 /* ImagePicker.swift in Sources */,
-				66828531274160040097D634 /* MenuView.swift in Sources */,
+				66828531274160040097D634 /* iOSMenuView.swift in Sources */,
 				6686815B274003A200EF572C /* FormRowStaticView.swift in Sources */,
 				6637A8D027427D3400447D94 /* ProfileInfo.swift in Sources */,
 				667713E9272AAAB300740BE9 /* LoginViewModifier.swift in Sources */,
 				6686814D273FE28C00EF572C /* PadView.swift in Sources */,
 				662D3639272AA3F9000C6E9F /* LoginIOSMacApp.swift in Sources */,
+				66FBF1832743BA3600B4D23B /* OrdersCartViewModel.swift in Sources */,
+				66FBF1932743C2CC00B4D23B /* MenuViewModel.swift in Sources */,
 				66BF4211272C524D000F63F5 /* SideLoginView.swift in Sources */,
 				668681582740035800EF572C /* FormRowLinkView.swift in Sources */,
 				667713E4272AA8A700740BE9 /* Welcome.swift in Sources */,
+				66FBF19B2743D7BB00B4D23B /* NFC.swift in Sources */,
 				667713EB272AAAEA00740BE9 /* Register.swift in Sources */,
 				66868155273FF94400EF572C /* SettingsView.swift in Sources */,
 				6686814B273FE27700EF572C /* PhoneView.swift in Sources */,
 				665C8965273308B500E15609 /* LoadingView.swift in Sources */,
 				667713E2272AA88D00740BE9 /* LoginViewModel.swift in Sources */,
+				66FBF1972743C37500B4D23B /* MenuView.swift in Sources */,
 				667713ED272AAB2E00740BE9 /* Login.swift in Sources */,
 				66442558273E5E1F009202D3 /* CopyrightModifier.swift in Sources */,
-				6682852E27415FCF0097D634 /* POSView.swift in Sources */,
+				66FBF1842743BA3B00B4D23B /* ItemsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +592,7 @@
 				DEVELOPMENT_TEAM = MW2YXY2465;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Rentel NFC App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -570,6 +625,7 @@
 				DEVELOPMENT_TEAM = MW2YXY2465;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Rentel NFC App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -711,6 +767,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 66DAA5C02737E67B006F6728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		66FBF1872743C10000B4D23B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66DAA5C02737E67B006F6728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		66FBF1892743C10F00B4D23B /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66DAA5C02737E67B006F6728 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -12,33 +12,31 @@ struct PhoneView: View {
     @Binding var currentList: Int
     
     var body: some View {
-        NavigationView{
+//        NavigationView{
             TabView {
-                MenuView()
+                MenuListView(menuListViewModel: MenuListViewModel())
                     .tabItem{
                         Image(systemName: "pencil")
                         Text("Menu")
                 }
                     .tag(1)
-                OrdersView()
+                CartView()
                     .tabItem{
                         Image(systemName: "server.rack")
                         Text("Orders")
                     }
                     .tag(2)
-                POSView()
+                NFC()
                     .tabItem {
-                        Image(systemName: "dollarsign.circle")
-                        Text("POS")
+                        Image(systemName: "wave.3.right.circle")
+                        Text("NFC")
                 }
                     .tag(3)
-                    
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink(destination: SettingsView(),label: { Image(systemName: "gear")}
-                    )
-                }
+                )
             }
         }
     }
