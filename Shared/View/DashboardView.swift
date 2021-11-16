@@ -12,10 +12,14 @@ struct DashboardView: View {
     
     var body: some View {
         
+        #if os(iOS)
         if UIDevice.current.userInterfaceIdiom == .phone {
             PhoneView(currentList: $currentList)
             } else {
                 PadView(currentList: $currentList)
             }
+        #else
+            MacView()
+        #endif
         }
     }

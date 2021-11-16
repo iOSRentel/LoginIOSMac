@@ -12,6 +12,8 @@ import Firebase
 
 class LoginViewModel: ObservableObject {
     
+
+        
     @Published var nonce = ""
 
 // Login properties
@@ -34,9 +36,11 @@ class LoginViewModel: ObservableObject {
     
     //  Detectiong MacOS
     @Published var ismacOS = false
-
+    
 // Log status
     @AppStorage("log_Status") var status = false
+
+    
     
 //MARK: - Auth
     func loginUser(){
@@ -60,7 +64,10 @@ class LoginViewModel: ObservableObject {
             }
             print("Success")
             withAnimation{status = true}
+            
+
         }
+        
     }
     
 //MARK: Reset password
@@ -101,8 +108,8 @@ class LoginViewModel: ObservableObject {
                     return
                 }
     //   Success
-                print("Success")
-                errorMsg = "Account Crated Successfully"
+                
+                errorMsg = "Welcome to RENTEL!\nYour Account crated Successfully"
                 error.toggle()
                 withAnimation{gotoRegister = false}
                 
@@ -112,7 +119,6 @@ class LoginViewModel: ObservableObject {
          errorMsg = "Missing password"
             error.toggle()
         }
-            
     }
     
     init() {

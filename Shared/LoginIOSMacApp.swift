@@ -49,7 +49,7 @@ struct RentelApp: App {
 
 
 class AppDelegate: NSObject, NSUIDelegate{
-    
+            
 #if os(macOS)
     internal func applicationDidFinishLaunching(_ notification: Notification) {
         FirebaseApp.configure()

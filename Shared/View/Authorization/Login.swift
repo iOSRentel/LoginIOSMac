@@ -16,7 +16,7 @@ struct Login: View {
     
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 15, content: {
+        VStack(alignment: .leading, spacing: 8, content: {
             
             Text("Please Login")
                 .font(.title2)

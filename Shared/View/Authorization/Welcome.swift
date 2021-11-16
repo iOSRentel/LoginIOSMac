@@ -26,12 +26,12 @@ struct Welcome: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color("FontColor"))
+                        .padding(.top, 30)
                         .padding(.leading, 15)
-                    
                     Spacer()
                 }
                 .padding()
-                
+
 // Логотип
                 Image("kassa")
                     .resizable()
